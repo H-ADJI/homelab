@@ -3,4 +3,6 @@
 ## Setup
 
 - Install ubuntu server
-- Super secure SSH
+- ssh hardening setup
+- taskd
+- jellyfin

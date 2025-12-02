@@ -61,3 +61,8 @@ sudo ufw limit 22/tcp comment "SSH rate limiting"
 sudo ufw enable
 sudo ufw status
 ```
+
+```sh
+# TODO: fail2ban
+# TODO: expand logical volume
+```

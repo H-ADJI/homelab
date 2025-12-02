@@ -16,7 +16,7 @@
   `sudo apt install -y fzf`
   `git clone --depth 1 --branch 0.44.0 https://github.com/junegunn/fzf.git`
 - add to .bashrc
-  ```bash
+  ```sh
   source fzf/shell/completion.bash
   source fzf/shell/key-bindings.bash
   alias c="clear"
@@ -42,6 +42,22 @@
     # PermitUserEnvironment no
     X11Forwarding no
     DebianBanner no
+    AllowUsers khalil
+    ClientAliveInterval 300
+    ClientAliveCountMax 0
+    MaxSessions 2
+
 ```
 
-- sudo sshd -T to check changed values
+- reload ssh deamon
+  `sudo systemctl reload ssh.service`
+- check new configuration is applied
+  `sudo sshd -T`
+- configure ufw :
+
+```sh
+sudo ufw allow 22/tcp comment "SSH access"
+sudo ufw limit 22/tcp comment "SSH rate limiting"
+sudo ufw enable
+sudo ufw status
+```

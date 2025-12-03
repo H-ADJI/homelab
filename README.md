@@ -6,5 +6,6 @@
 - [x] ssh hardening setup
 - [x] ddns
 - taskd
+- git mirror server
 - jellyfin
 - home assistant

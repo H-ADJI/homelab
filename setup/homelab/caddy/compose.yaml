@@ -12,14 +12,16 @@ services:
 
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
-      - ./data:/data:U
-      - ./config:/config:U
+      - caddy_data:/data
+      - caddy_config:/config
 
     networks:
       - proxy
 
     command: ["caddy", "run", "--config", "/etc/caddy/Caddyfile", "--watch"]
-
+volumes:
+  caddy_data:
+  caddy_config:
 networks:
   proxy:
     external: true

@@ -9,9 +9,6 @@
 }
 
 grafana.khalil.bounceme.net {
-  basicauth {
-    admin admin
-  }
   import grafana
 }
 

@@ -11,9 +11,4 @@ services:
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - ./data:/data
-    networks:
-      - proxy-root
-
-networks:
-  proxy-root:
-    driver: bridge
+    command: ["caddy", "run", "--config", "/etc/caddy/Caddyfile"]

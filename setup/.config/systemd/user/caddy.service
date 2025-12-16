@@ -1,0 +1,16 @@
+[Unit]
+Description=Homelab Caddy
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=%h/.config/homelab/caddy
+ExecStart=/usr/bin/podman compose up -d
+ExecStop=/usr/bin/podman compose down
+Restart=always
+RemainAfterExit=yes
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target

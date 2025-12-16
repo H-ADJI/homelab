@@ -12,8 +12,8 @@ services:
 
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
-      - ./data:/data
-      - ./config:/config
+      - ./data:/data:U
+      - ./config:/config:U
 
     networks:
       - proxy

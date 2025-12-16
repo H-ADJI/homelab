@@ -1,0 +1,25 @@
+version: "3.9"
+
+services:
+  caddy:
+    image: caddy:2
+    container_name: caddy
+    restart: unless-stopped
+
+    ports:
+      - "8000:8000"
+      - "8443:8443"
+
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./data:/data
+      - ./config:/config
+
+    networks:
+      - proxy
+
+    command: ["caddy", "run", "--config", "/etc/caddy/Caddyfile", "--watch"]
+
+networks:
+  proxy:
+    external: true

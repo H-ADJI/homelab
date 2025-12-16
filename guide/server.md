@@ -56,14 +56,7 @@
   `sudo sshd -T`
 - configure ufw :
 
-```sh
-sudo ufw allow 22/tcp comment "SSH access"
-sudo ufw limit 22/tcp comment "SSH rate limiting"
-sudo ufw enable
-sudo ufw status
-```
-
-```sh
-# TODO: fail2ban
-# TODO: expand logical volume
-```
+  ```sh
+  # TODO: fail2ban
+  # TODO: expand logical volume
+  ```

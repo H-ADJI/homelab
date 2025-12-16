@@ -4,11 +4,10 @@
     https_port 8443
 }
 
-(grafana) {
-  reverse_proxy grafana:3000
-}
-
 http://grafana.khalil.bounceme.net {
-  import grafana
+  basicauth {
+        admin JDJhJDE0JHNhbXBsZWhhc2g=
+    }
+  reverse_proxy grafana:3000
 }
 

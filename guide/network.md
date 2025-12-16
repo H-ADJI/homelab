@@ -1,14 +1,16 @@
 # Network Setup
 
 - DDNS using no-ip
-- NAT / PAT forwarding
-- ufw allow 22 - 80 - 443
-- route privileged ports :
-  ```sh
-  sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8000
-  sudo iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDIRECT --to-port 8443
-  ```
+- NAT / PAT forwarding to non-privileged ports
 - Create shared container network :
   ```sh
   podman network create proxy
+  ```
+- firewall :
+  ```sh
+  # NOTE: block podman container network connections
+  sudo ufw allow 22/tcp comment "SSH access"
+  sudo ufw limit 22/tcp comment "SSH rate limiting"
+  sudo ufw enable
+  sudo ufw status
   ```

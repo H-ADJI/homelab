@@ -5,7 +5,7 @@
 }
 
 http://grafana.khalil.bounceme.net {
-  basicauth {
+  basic_auth {
         admin JDJhJDE0JHNhbXBsZWhhc2g=
     }
   reverse_proxy grafana:3000

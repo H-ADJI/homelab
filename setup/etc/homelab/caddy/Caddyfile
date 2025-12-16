@@ -1,0 +1,19 @@
+{
+  email h-adji_tech@proton.me
+}
+
+(grafana) {
+  reverse_proxy host.containers.internal:3000
+}
+
+(jellyfin) {
+  reverse_proxy host.containers.internal:8096
+}
+
+grafana.khalil.bounceme.net {
+  import grafana
+}
+
+jellyfin.khalil.bounceme.net {
+  import jellyfin
+}

@@ -23,6 +23,7 @@
   alias e="nvim"
   alias vim="nvim"
   alias update="sudo apt update && sudo apt upgrade -y"
+  alias ggl="git pull"
   ```
 - ssh-copy-id
 - add this to /etc/ssh/sshd_config

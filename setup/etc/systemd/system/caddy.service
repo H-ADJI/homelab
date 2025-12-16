@@ -1,0 +1,15 @@
+[Unit]
+Description=Homelab Caddy (rootful)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=/etc/homelab/caddy
+ExecStart=/usr/bin/podman compose up -d
+ExecStop=/usr/bin/podman compose down
+RemainAfterExit=yes
+TimeoutStartSec=0
+
+[Install]
+WantedBy=multi-user.target

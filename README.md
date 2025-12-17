@@ -9,15 +9,17 @@ My homelab setup to host linux ISOs 💀
 
 ## Setup
 
-- um350 mini pc
-- SSH hardened Ubuntu server
-- Rootless containers using podman + systemd
-- DDNS
-- Caddy reverse proxy
-- taskchampion-sync-server
-- Grafana
-- Git mirror server
-- Jellyfin
-- Home Assistant
-- ADguard
+- [x] um350 mini pc
+- [x] SSH hardened Ubuntu server
+- [x] Rootless containers using podman + systemd
+- [~] DDNS
+- [x] Caddy reverse proxy
+- [x] taskchampion-sync-server
+- [x] Grafana
+- [ ] Git mirror server
+- [ ] Jellyfin
+- [ ] Home Assistant
+- [ ] ADguard
+- [ ] Redundancy / HA
+- [ ] local / remote data backups
 - ...

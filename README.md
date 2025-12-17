@@ -16,7 +16,7 @@ My homelab setup to host linux ISOs 💀
 - [x] Caddy reverse proxy
 - [x] taskchampion-sync-server
 - [x] Grafana
-- [ ] Git mirror server
+- [ ] Gitea (Git mirror server)
 - [ ] Jellyfin
 - [ ] Home Assistant
 - [ ] ADguard

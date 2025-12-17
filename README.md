@@ -12,7 +12,7 @@ My homelab setup to host linux ISOs 💀
 - [x] um350 mini pc
 - [x] SSH hardened Ubuntu server
 - [x] Rootless containers using podman + systemd
-- [~] DDNS
+- [x] DDNS
 - [x] Caddy reverse proxy
 - [x] taskchampion-sync-server
 - [x] Grafana
@@ -22,4 +22,3 @@ My homelab setup to host linux ISOs 💀
 - [ ] ADguard
 - [ ] Redundancy / HA
 - [ ] local / remote data backups
-- ...

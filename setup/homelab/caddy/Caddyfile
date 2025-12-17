@@ -4,6 +4,9 @@
     https_port 8443
 }
 
+http://task.khalil.bounceme.net {
+  reverse_proxy taskchampion:8080
+}
 http://grafana.khalil.bounceme.net {
   reverse_proxy grafana:3000
 }

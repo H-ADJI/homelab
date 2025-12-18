@@ -25,6 +25,7 @@
     alias vim="nvim"
     alias update="sudo apt update && sudo apt upgrade -y"
     alias ggl="git pull"
+    alias lab="cd ~/.config/homelab"
   ```
 - ssh-copy-id
 - add this to /etc/ssh/sshd_config

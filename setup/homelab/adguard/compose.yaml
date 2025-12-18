@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   adguard:
-    image: adguardhome
+    image: docker.io/adguard/adguardhome
     container_name: adguard
     restart: unless-stopped
     ports:

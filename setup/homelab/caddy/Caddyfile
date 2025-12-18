@@ -11,3 +11,8 @@ http://grafana.khalil.bounceme.net {
   reverse_proxy grafana:3000
 }
 
+http://adguard.khalil.bounceme.net {
+  reverse_proxy adguard:3001
+}
+
+

@@ -15,4 +15,3 @@ http://adguard.khalil.bounceme.net {
   reverse_proxy adguard:3001
 }
 
-

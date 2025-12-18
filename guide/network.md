@@ -2,6 +2,9 @@
 
 - DDNS using no-ip
 - NAT / PAT forwarding to non-privileged ports
+  - 80:8000
+  - 443:8443
+  - 53:5300
 - Create shared container network :
   ```sh
   podman network create proxy

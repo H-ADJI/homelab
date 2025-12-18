@@ -17,13 +17,14 @@
   `git clone --depth 1 --branch 0.44.0 https://github.com/junegunn/fzf.git`
 - add to .bashrc
   ```sh
-  source fzf/shell/completion.bash
-  source fzf/shell/key-bindings.bash
-  alias c="clear"
-  alias e="nvim"
-  alias vim="nvim"
-  alias update="sudo apt update && sudo apt upgrade -y"
-  alias ggl="git pull"
+    source fzf/shell/completion.bash
+    source fzf/shell/key-bindings.bash
+    PATH=$PATH:"$HOME/.config/scripts"
+    alias c="clear"
+    alias e="nvim"
+    alias vim="nvim"
+    alias update="sudo apt update && sudo apt upgrade -y"
+    alias ggl="git pull"
   ```
 - ssh-copy-id
 - add this to /etc/ssh/sshd_config

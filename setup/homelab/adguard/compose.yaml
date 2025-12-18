@@ -8,10 +8,10 @@ services:
     ports:
       - "5300:53/tcp"
       - "5300:53/udp"
-      - "3000:3000/tcp"
-      - "8000:80/tcp"
-      - "8443:443/tcp"
-      - "8443:443/udp"
+      - "3001:3000/tcp"
+      - "8001:80/tcp"
+      - "8444:443/tcp"
+      - "8444:443/udp"
     volumes:
       - adguard_data:/opt/adguardhome/work
       - adguard_conf:/opt/adguardhome/conf

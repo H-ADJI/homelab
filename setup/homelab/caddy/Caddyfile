@@ -15,3 +15,6 @@ http://adguard.khalil.bounceme.net {
   reverse_proxy adguard:3000
 }
 
+http://adguard.admin.khalil.bounceme.net {
+  reverse_proxy adguard:80
+}

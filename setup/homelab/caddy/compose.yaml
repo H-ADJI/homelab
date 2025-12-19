@@ -5,16 +5,13 @@ services:
     image: caddy:2
     container_name: caddy
     restart: unless-stopped
-
     ports:
       - "8000:8000"
       - "8443:8443"
-
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy_data:/data
       - caddy_config:/config
-
     networks:
       - proxy
 

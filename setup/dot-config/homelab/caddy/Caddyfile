@@ -4,7 +4,7 @@
     https_port 8443
 }
 
-http://task.khalil.bounceme.net {
+http://task.hadji.org {
   reverse_proxy taskchampion:8080
 }
 http://grafana.hadji.org {

@@ -1,7 +1,5 @@
 {
     email h-adji_tech@proton.me
-    http_port 8000
-    https_port 8443
 }
 
 http://task.hadji.org {

@@ -27,7 +27,7 @@
     alias ggl="git pull"
     alias lab="cd ~/.config/homelab"
   ```
-- ssh-copy-id
+- `ssh-copy-id -fi ~/.ssh/{SSH_PUB_KEY} {USER}@{IP}`
 - add this to /etc/ssh/sshd_config
 
 ```ini
@@ -62,3 +62,33 @@
   # TODO: fail2ban
   # TODO: expand logical volume
   ```
+
+## Network Setup
+
+- DDNS using ddclient
+- NAT / PAT forwarding to non-privileged ports
+  - 80:8000
+  - 443:8443
+  - 53:5300
+
+## Podman
+
+- for privileged operations podman need to run as root
+  - example : binding to ports below 1024
+
+- Create shared container network :
+  ```sh
+  podman network create proxy
+  ```
+
+### references
+
+- [podman systemd integration](https://mikebarkas.dev/start-podman-containers-systemd/)
+
+## Systemd
+
+- `sudo loginctl enable-linger username` to enable services even when logged of
+
+### references
+
+- [podman systemd integration](https://mikebarkas.dev/start-podman-containers-systemd/)

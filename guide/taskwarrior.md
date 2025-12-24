@@ -27,7 +27,7 @@ taskchampion-sync-server
 - add taskrc sync config :
 
 ```ini
-sync.server.url=http:\/\/khalil.bounceme.net:8080
+sync.server.url=http:\/\/{DOMAIN}
 sync.server.client_id=019aef70-e855-75ad-8adc-744b67375036
 sync.encryption_secret=0806
 ```

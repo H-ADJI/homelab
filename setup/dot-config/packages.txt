@@ -1,0 +1,5 @@
+ddnclient
+fzf
+neovim
+podman
+podman-compose

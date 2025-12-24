@@ -7,7 +7,7 @@
 http://task.khalil.bounceme.net {
   reverse_proxy taskchampion:8080
 }
-http://grafana.khalil.bounceme.net {
+http://grafana.hadji.org {
   reverse_proxy grafana:3000
 }
 

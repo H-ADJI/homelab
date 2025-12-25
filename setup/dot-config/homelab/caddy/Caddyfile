@@ -1,18 +1,23 @@
 {
     email h-adji_tech@proton.me
 }
+*.hadji.org {
+    tls {
+            dns cloudflare {env.CF_TOKEN}
+    }
+}
 
-http://task.hadji.org {
+task.hadji.org {
   reverse_proxy taskchampion:8080
 }
-http://grafana.hadji.org {
+grafana.hadji.org {
   reverse_proxy grafana:3000
 }
 
-http://adguard.khalil.bounceme.net {
+adguard.hadji.org {
   reverse_proxy adguard:3000
 }
 
-http://adguard.admin.khalil.bounceme.net {
+dashboard.adguard.hadji.org {
   reverse_proxy adguard:80
 }

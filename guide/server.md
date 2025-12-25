@@ -26,6 +26,11 @@
     alias update="sudo apt update && sudo apt upgrade -y"
     alias ggl="git pull"
     alias lab="cd ~/.config/homelab"
+    alias conf="cd ~/.config"
+    alias ..="cd .."
+    alias enable_service="systemctl --user enable --now"
+    alias restart_service="systemctl --user restart"
+    alias journal="journalctl --user -f -u"
   ```
 - `ssh-copy-id -fi ~/.ssh/{SSH_PUB_KEY} {USER}@{IP}`
 - add this to /etc/ssh/sshd_config

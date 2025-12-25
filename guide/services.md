@@ -17,10 +17,10 @@
 
 ## Systemd
 
-- `sudo loginctl enable-linger username` to enable services even when logged of
+- `loginctl enable-linger $USER` to enable services even when logged of
 - `systemctl --user daemon-reload` to refresh systemd config file
 - `systemctl --user enable --now {NAME}.service` to enable a service
-- `journalctl --user -u {NAEM}.service` to inspect service logs
+- `journalctl --user -u {NAME}.service` to inspect service logs
 
 ### references
 

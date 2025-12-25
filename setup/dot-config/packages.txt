@@ -3,3 +3,4 @@ fzf
 neovim
 podman
 podman-compose
+stow

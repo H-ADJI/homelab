@@ -1,2 +1,2 @@
 */.env
- systemd/.config/systemd/user/default.target.wants/*
+systemd/.config/systemd/user/default.target.wants

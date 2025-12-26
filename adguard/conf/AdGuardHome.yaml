@@ -1,0 +1,11 @@
+dns:
+  # ... other DNS settings like port, bind_host ...
+
+  # Define the HTTP (plain text) DoH server here
+  # Caddy will connect to this port over HTTP
+  upstream_dns_json_server:
+    - bind_host: 0.0.0.0 # Crucial: Listen on all interfaces
+      port: 8443 # Choose an available HTTP port for DoH
+      path: /dns-query # Standard path for DoH
+      # You do NOT want 'tls_port' or 'tls_cert' here
+      # as Caddy will handle TLS

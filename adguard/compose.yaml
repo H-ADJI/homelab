@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     volumes:
       - adguard_data:/opt/adguardhome/work
-      - adguard_conf:/opt/adguardhome/conf
+      - ./conf:/opt/adguardhome/conf
     ports:
       - "5300:53/udp"
       - "5300:53/tcp"
@@ -15,7 +15,6 @@ services:
       - proxy
 volumes:
   adguard_data:
-  adguard_conf:
 networks:
   proxy:
     external: true

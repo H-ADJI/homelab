@@ -1,26 +1,37 @@
 {
     email h-adji_tech@proton.me
 }
-*.hadji.org {
+
+(cf_tls) {
     tls {
             dns cloudflare {env.CF_TOKEN}
     }
+}
+
+*.hadji.org {
+    import cf_tls
+}
+
+health.hadji.org {
+    respond "all good"
 }
 
 task.hadji.org {
     reverse_proxy taskchampion:8080
 }
+
 grafana.hadji.org {
     reverse_proxy grafana:3000
 }
 
-adguard.hadji.org {
+*.adguard.hadji.org {
+    import cf_tls
+}
+
+setup.adguard.hadji.org {
     reverse_proxy adguard:3000
 }
 
 dashboard.adguard.hadji.org {
     reverse_proxy adguard:80
-    tls {
-            dns cloudflare {env.CF_TOKEN}
-    }
 }

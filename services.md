@@ -44,8 +44,8 @@
 
 ```ini
 sync.server.url=http:\/\/{DOMAIN}
-sync.server.client_id=019aef70-e855-75ad-8adc-744b67375036
-sync.encryption_secret=0806
+sync.server.client_id={CLIENT_ID}
+sync.encryption_secret={PASS}
 ```
 
 ### references

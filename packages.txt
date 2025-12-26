@@ -1,4 +1,3 @@
-ddnclient
 fzf
 neovim
 podman

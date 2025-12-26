@@ -2,6 +2,7 @@ version: "3.9"
 
 services:
   adguard:
+    # TODO: fix adguardhome version for DOH
     image: docker.io/adguard/adguardhome
     container_name: adguard
     restart: unless-stopped

@@ -8,6 +8,16 @@
     }
 }
 
+setup.adguard.hadji.org {
+    reverse_proxy adguard:3000
+    import cf_tls
+}
+
+dashboard.adguard.hadji.org {
+    reverse_proxy adguard:80
+    import cf_tls
+}
+
 *.hadji.org {
     import cf_tls
 }
@@ -24,12 +34,3 @@ grafana.hadji.org {
     reverse_proxy grafana:3000
 }
 
-setup.adguard.hadji.org {
-    reverse_proxy adguard:3000
-    import cf_tls
-}
-
-dashboard.adguard.hadji.org {
-    reverse_proxy adguard:80
-    import cf_tls
-}

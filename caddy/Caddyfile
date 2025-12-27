@@ -24,20 +24,3 @@ grafana.hadji.org {
     reverse_proxy grafana:3000
 }
 
-adguard-setup.hadji.org {
-    reverse_proxy adguard:3000
-}
-
-adguard-dashboard.hadji.org {
-    reverse_proxy adguard:80
-}
-
-doh.hadji.org {
-    reverse_proxy adguard:8443 {
-            header_up Host {http.request.host}
-        }
-        log {
-            output stdout
-            format console
-        }
-}

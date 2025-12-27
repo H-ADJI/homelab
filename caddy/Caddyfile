@@ -26,12 +26,10 @@ grafana.hadji.org {
 
 adguard-setup.hadji.org {
     reverse_proxy adguard:3000
-    import cf_tls
 }
 
 adguard-dashboard.hadji.org {
     reverse_proxy adguard:80
-    import cf_tls
 }
 
 doh.hadji.org {

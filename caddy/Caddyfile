@@ -34,13 +34,8 @@ adguard-dashboard.hadji.org {
     import cf_tls
 }
 
-adguard-dns.hadji.org {
-    reverse_proxy adguard:443
-    import cf_tls
-}
-
 doh.hadji.org {
-    reverse_proxy adguard:443 {
+    reverse_proxy adguard:8443 {
             header_up Host {http.request.host}
         }
         log {

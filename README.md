@@ -18,6 +18,7 @@ My homelab setup to host linux ISOs 💀
 - [x] Grafana
 - [ ] Jellyfin
 - [ ] Home Assistant
+- [ ] Blog
 - [ ] Gitea (Git mirror server)
 - [ ] passwd manager
 - [ ] Redundancy / HA

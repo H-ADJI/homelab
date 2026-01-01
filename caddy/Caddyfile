@@ -33,7 +33,7 @@ grafana.hadji.org {
     reverse_proxy grafana:3000
 }
 
-archconfigs.hadji.org {
+conf.hadji.org {
     import cf_tls
     root * /var/www/static/archinstall
     file_server {

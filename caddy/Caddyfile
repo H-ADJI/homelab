@@ -8,6 +8,15 @@
     }
 }
 
+hadji.org {
+    import cf_tls
+    @setup_redirect {
+        path /setup
+        path /setup/
+    }
+    redir @setup_redirect https://h-adji.github.io/dotfiles/init.sh 301
+}
+
 *.hadji.org {
     import cf_tls
 }

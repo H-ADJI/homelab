@@ -16,6 +16,7 @@ My homelab setup to host linux ISOs 💀
 - [x] Caddy reverse proxy
 - [x] taskchampion-sync-server
 - [x] Grafana
+- [ ] static files and mirrors
 - [ ] Jellyfin
 - [ ] Home Assistant
 - [ ] Blog

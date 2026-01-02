@@ -16,8 +16,8 @@
     "archinstall-language": "English",
     "auth_config": {},
     "bootloader_config": {
-        "bootloader": "Grub",
-        "removable": true,
+        "bootloader": "Systemd-boot",
+        "removable": false,
         "uki": false
     },
     "custom_commands": [],
@@ -120,12 +120,16 @@
     "packages": [],
     "parallel_downloads": 0,
     "profile_config": {
-        "gfx_driver": null,
-        "greeter": null,
+        "gfx_driver": "All open-source",
+        "greeter": "sddm",
         "profile": {
-            "custom_settings": {},
-            "details": [],
-            "main": "Minimal"
+            "custom_settings": {
+                "Hyprland": {
+                    "seat_access": "polkit"
+                }
+            },
+            "details": ["Hyprland"],
+            "main": "Desktop"
         }
     },
     "script": null,

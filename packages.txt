@@ -3,3 +3,4 @@ neovim
 podman
 podman-compose
 stow
+iptables-persistent

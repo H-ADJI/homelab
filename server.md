@@ -75,3 +75,14 @@
   - 80:8000
   - 443:8443
   - 22:22
+- port forwarding for :
+
+```bash
+# For external incoming requests
+sudo iptables -t nat -A PREROUTING -i enp3s0 -p udp --dport 53 -j REDIRECT --to-port 5300
+sudo iptables -t nat -A PREROUTING -i enp3s0 -p tcp --dport 53 -j REDIRECT --to-port 5300
+# For requests originating from the server itself
+sudo iptables -t nat -A OUTPUT -p udp --dport 53 -j REDIRECT --to-port 5300
+sudo iptables -t nat -A OUTPUT -p tcp --dport 53 -j REDIRECT --to-port 5300
+sudo netfilter-persistent save
+```

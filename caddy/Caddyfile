@@ -12,6 +12,14 @@
     import cf_tls
 }
 
+adguard-setup.hadji.org {
+    reverse_proxy adguard:3000
+}
+
+adguard-dashboard.hadji.org {
+    reverse_proxy adguard:80
+}
+
 health.hadji.org {
     respond "all good"
 }

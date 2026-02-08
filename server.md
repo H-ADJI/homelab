@@ -75,7 +75,8 @@
   - 80:8000
   - 443:8443
   - 22:22
-- port forwarding for :
+
+- port forwarding for dns:
 
 ```bash
 # For external incoming requests

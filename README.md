@@ -15,13 +15,13 @@ My homelab setup to host linux ISOs 💀
 - [x] DDNS
 - [x] Caddy reverse proxy
 - [x] taskchampion-sync-server
-- [x] Grafana
 - [x] static config files mirror
 - [x] Adguard (DNS - Adblocker)
 - [ ] Jellyfin
-- [ ] Home Assistant
+- [ ] Immich
+- [ ] Vaultwarden
+- [ ] Uptimekuma
+- [ ] Duplicati
 - [ ] Blog
 - [ ] Gitea (Git mirror server)
-- [ ] passwd manager
-- [ ] Redundancy / HA
-- [ ] local / remote data backups
+- [ ] Home Assistant

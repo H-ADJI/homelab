@@ -17,6 +17,7 @@ My homelab setup to host linux ISOs 💀
 - [x] taskchampion-sync-server
 - [x] static config files mirror
 - [x] Adguard (DNS - Adblocker)
+- [ ] Adguard api scheduling
 - [ ] Jellyfin
 - [ ] Immich
 - [ ] Vaultwarden

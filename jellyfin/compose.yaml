@@ -9,14 +9,14 @@ services:
       - ./config:/config
       - ./cache:/cache
       - type: bind
-        source: media
+        source: ./media
         target: /media
       - type: bind
-        source: media2
+        source: ./media2
         target: /media2
         read_only: true
       - type: bind
-        source: fonts
+        source: ./fonts
         target: /usr/local/share/fonts/custom
         read_only: true
     restart: "unless-stopped"

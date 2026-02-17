@@ -28,8 +28,8 @@ task.hadji.org {
     reverse_proxy taskchampion:8080
 }
 
-grafana.hadji.org {
-    reverse_proxy grafana:3000
+jellyfin.hadji.org {
+    reverse_proxy jellyfin:8096
 }
 
 conf.hadji.org {

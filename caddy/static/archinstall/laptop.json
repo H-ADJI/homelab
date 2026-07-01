@@ -121,7 +121,7 @@
     "parallel_downloads": 0,
     "profile_config": {
         "gfx_driver": "All open-source",
-        "greeter": "sddm",
+        "greeter": "ly",
         "profile": {
             "custom_settings": {
                 "Hyprland": {
